@@ -1,17 +1,17 @@
 # Agile project workflow involving github
 
-A simple git workflow for agile team to plan task/bugs efficiently.
+A simple git workflow for agile team to plan task/bugs efficiently. Its based on this [documentation](http://reinh.com/blog/2009/03/02/a-git-workflow-for-agile-teams.html)
 
-# Summary
-1. Sprint Planning - Prioritize tasks
-2. Pull to update your local master
-3. Create a feature branch
-4. Do work in your feature branch
-5. Keep Feature Branch up-to-date with master
-6. Complete your Feature
-7. Create a Pull Request & Review Pull request
-8. Delete Feature Branch
-9. Verify and close the feature
+# Rules Summary
+1. [Sprint Planning - Prioritize tasks](https://github.com/agiratech/agile-git-workflow/blob/master/README.md#sprint-planning---prioritize-tasks)
+2. [Pull to update your local master](https://github.com/agiratech/agile-git-workflow#pull-to-update-your-local-master)
+3. [Create a feature branch](https://github.com/agiratech/agile-git-workflow#create-a-feature-branch)
+4. [Do work in your feature branch](https://github.com/agiratech/agile-git-workflow#do-work-in-your-feature-branch)
+5. [Keep Feature Branch up-to-date with master](https://github.com/agiratech/agile-git-workflow#keep-feature-branch-up-to-date-with-master)
+6. [Complete your Feature](https://github.com/agiratech/agile-git-workflow#complete-your-feature)
+7. [Create a Pull Request & Review Pull request](https://github.com/agiratech/agile-git-workflow#create-a-pull-request--review-pull-request)
+8. [Delete Feature Branch](https://github.com/agiratech/agile-git-workflow#delete-feature-branch)
+9. [Verify and close the feature](https://github.com/agiratech/agile-git-workflow#verify-and-close-the-feature)
 
 The above rules makes an efficient workflow for developers in Agile teams to handles features / bugs to keep a clean and sane history.
 
