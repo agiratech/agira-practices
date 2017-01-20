@@ -10,7 +10,6 @@ Maintainable.
 
 ## Table of Contents
 
-* [Installing to a custom location](#installing-to-a-custom-location)
 * [Use gofmt](#use-gofmt)
 * [Avoid nesting by handling errors first](#avoid-nesting-by-handling-errors-first)
 * [Error Strings](#error-strings)
@@ -31,26 +30,15 @@ Maintainable.
 * [Named Result Parameters](#named-result-parameters)
 * [Receiver Names](#receiver-names)
 * [Receiver Type](#receiver-type)
+* [Closing HTTP Response Body](#closing-http-response-body)
+* [Unexported Structure Fields Are Not Encoded](#unexported-structure-fields-are-not-encoded)
+* [Breaking Out of `for switch` and `for select` Code Blocks](#breaking-out-of-for-switch-and-for-select)
+* [Iteration Variables and Closures in `for` Statements](#iteration-variables-and-closures-in-for-statements)
+* [Deferred Function Call Argument Evaluation](#deferred-function-call-argument-evaluation)
+* [Deferred Function Call Execution](#deferred-function-call-execution)
+* [Type Assertions](#type-assertions)
+* [Handle Blocked Goroutines and Resource Leaks](#handle-blocked-goroutines-and-resources-leaks)
 
-## Installing to a custom location
-
-The Go binary distributions assume they will be installed in /usr/local/go, but it is possible to install the Go tools to a different location. In this case you must set the GOROOT environment variable to point to the directory in which it was installed.
-
-For example, if you installed Go to your home directory you should add the following commands to $HOME/.profile:
-
-```
-export GOROOT=$HOME/go
-export PATH=$PATH:$GOROOT/bin 
-```
-
-**Note:** GOROOT must be set only when installing to a custom location.
-
-Add /usr/local/go/bin to the PATH environment variable. You can do this by adding this line to your /etc/profile (for a system-wide installation) or $HOME/.profile:
-
-```
-export PATH=$PATH:/usr/local/go/bin
-```
-This allows you to easily run binaries you get via go get, and makes the (preferred) go install mechanism of building code easier to work with.
 
 ## Use gofmt
 
@@ -181,6 +169,7 @@ Variable names in Go should be short rather than long. This is especially true f
 
 ## Type switch to handle special cases
 
+Suppose if you’re not sure about what the interface{} type could be, you can use a type switch:
 ```
 func Write(v interface{}) {
   switch v.(type) {
@@ -196,6 +185,7 @@ func Write(v interface{}) {
 
 ## Type switch with short variable declaration
 
+Declare a variable and it will have the type of each `case`:
 ```
 func Write(v interface{}) {
   switch x := v.(type) {
