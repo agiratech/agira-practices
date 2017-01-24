@@ -1,4 +1,4 @@
-# Rails Refactoring Techniques - Concerns
+# Rails Refactoring Techniques
 
 # Objectives
 1. DRY(Don't repeat yourself)
@@ -19,7 +19,7 @@ Sandi Metz' four rules from Ruby Rogues episode 87. Check this: https://robots.t
 # Patterns & Techniques
 There are few patterns and techniques to refactor rails models, controllers and views. Some main techniques are
 
-1. [Concerns](https://github.com/agiratech/agile-practices/new/master#what--is-concern)
+1. [Concerns](https://github.com/agiratech/agile-practices/blob/master/ruby_on_rails_refactoring_techniques.md#what--is-concern)
 2. Services objects
 3. Decorators
 4. Presenters
