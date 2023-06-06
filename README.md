@@ -1,3 +1,4 @@
+> Moved to [Best practices repo](https://github.com/agiratech/best-practices)
 # [Agiratech](http://agiratech.com/) 
 Agira is a technology company in the arena of business services and domain solutions that support global clients who comprise the current world economy.
 
